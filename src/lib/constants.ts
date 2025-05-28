@@ -43,9 +43,12 @@ export const mockProducts: Product[] = [
     longDescription: 'Our LM Rails with Blocks provide high rigidity and accuracy for various industrial applications. Engineered for durability and smooth operation, they are essential components for precision machinery, automation systems, and robotics. Available in multiple sizes and configurations to meet your specific requirements.',
     imageUrl: 'https://placehold.co/600x400.png',
     aiHint: 'lm rail block',
-    specifications: [],
-    addons: [],
-    datasheets: []
+    specifications: [
+      { key: 'Material', value: 'Hardened Steel' },
+      { key: 'Available Lengths', value: '100mm to 4000mm' },
+    ],
+    addons: [ {id: 'addon-lubrication-kit', name: 'Automatic Lubrication Kit', description: 'Ensures consistent lubrication for extended rail life.'}],
+    datasheets: [ { name: 'LMR-001 Series Datasheet.pdf', url: '#'}]
   },
   {
     id: 'sai-bls-001',
@@ -201,9 +204,9 @@ export const services: Service[] = [
     title: 'Custom Panel Building',
     description: 'We design and build custom control panels tailored to your specific automation needs, ensuring optimal performance and reliability. From simple operator stations to complex PLC enclosures, our expert team delivers high-quality solutions.',
     icon: PanelTopOpen,
-    beforeImageUrl: 'https://placehold.co/600x400.png',
+    beforeImageUrl: 'https://placehold.co/640x360.png',
     beforeAiHint: 'old controlpanel',
-    afterImageUrl: 'https://placehold.co/600x400.png',
+    afterImageUrl: 'https://placehold.co/640x360.png',
     afterAiHint: 'new controlpanel',
   },
   {
@@ -211,9 +214,9 @@ export const services: Service[] = [
     title: 'Robotic Welding Solutions',
     description: 'Enhance your manufacturing efficiency with our advanced robotic welding systems. We provide turnkey solutions, including robot integration, programming, and custom tooling for consistent, high-quality welds.',
     icon: Bot,
-    beforeImageUrl: 'https://placehold.co/600x400.png',
+    beforeImageUrl: 'https://placehold.co/640x360.png',
     beforeAiHint: 'manual welding',
-    afterImageUrl: 'https://placehold.co/600x400.png',
+    afterImageUrl: 'https://placehold.co/640x360.png',
     afterAiHint: 'robotic welding',
   },
   {
@@ -221,9 +224,9 @@ export const services: Service[] = [
     title: 'Maintenance & Repair',
     description: 'Keep your automation systems running smoothly with our comprehensive maintenance and repair services. Our skilled technicians offer preventative maintenance, troubleshooting, and emergency repairs to minimize downtime.',
     icon: Wrench,
-    beforeImageUrl: 'https://placehold.co/600x400.png',
+    beforeImageUrl: 'https://placehold.co/640x360.png',
     beforeAiHint: 'broken machine',
-    afterImageUrl: 'https://placehold.co/600x400.png',
+    afterImageUrl: 'https://placehold.co/640x360.png',
     afterAiHint: 'repaired machine',
   },
 ];
@@ -259,10 +262,10 @@ export const teamMembers: TeamMember[] = [
 ];
 
 export const officeImages = [
-  { src: 'https://placehold.co/600x400.png', alt: 'Modern Office Space', aiHint: 'modern office' },
-  { src: 'https://placehold.co/600x400.png', alt: 'Advanced Workshop', aiHint: 'industrial workshop' },
-  { src: 'https://placehold.co/600x400.png', alt: 'R&D Laboratory', aiHint: 'research lab' },
-  { src: 'https://placehold.co/600x400.png', alt: 'Collaborative Meeting Area', aiHint: 'meeting room' },
+  { src: 'https://placehold.co/640x360.png', alt: 'Modern Office Space', aiHint: 'modern office' },
+  { src: 'https://placehold.co/640x360.png', alt: 'Advanced Workshop', aiHint: 'industrial workshop' },
+  { src: 'https://placehold.co/640x360.png', alt: 'R&D Laboratory', aiHint: 'research lab' },
+  { src: 'https://placehold.co/640x360.png', alt: 'Collaborative Meeting Area', aiHint: 'meeting room' },
 ];
 
 export type Testimonial = {
@@ -332,7 +335,7 @@ export const whyChooseUsFeatures = [
     description: 'Meeting total lifecycle needs to help customers realize the most value from their investment.',
   },
   {
-    icon: ThumbsUp, // Changed from Truck
+    icon: ThumbsUp, 
     title: 'Reliable Solutions & Support',
     description: 'Committed to your success with dependable products and services for growing companies.',
   },
