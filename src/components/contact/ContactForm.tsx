@@ -72,7 +72,7 @@ export default function ContactForm() {
               <FormItem>
                 <FormLabel htmlFor="name">Full Name</FormLabel>
                 <FormControl>
-                  <Input id="name" placeholder="John Doe" {...field} className="text-base" />
+                  <Input id="name" placeholder="John Doe" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -85,7 +85,7 @@ export default function ContactForm() {
               <FormItem>
                 <FormLabel htmlFor="email">Email Address</FormLabel>
                 <FormControl>
-                  <Input id="email" type="email" placeholder="john.doe@example.com" {...field} className="text-base" />
+                  <Input id="email" type="email" placeholder="john.doe@example.com" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -99,7 +99,7 @@ export default function ContactForm() {
             <FormItem>
               <FormLabel htmlFor="subject">Subject</FormLabel>
               <FormControl>
-                <Input id="subject" placeholder="Regarding your products..." {...field} className="text-base" />
+                <Input id="subject" placeholder="Regarding your products..." {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -112,7 +112,7 @@ export default function ContactForm() {
             <FormItem>
               <FormLabel htmlFor="message">Message</FormLabel>
               <FormControl>
-                <Textarea id="message" placeholder="Your detailed message here..." {...field} rows={6} className="text-base" />
+                <Textarea id="message" placeholder="Your detailed message here..." {...field} rows={6} />
               </FormControl>
               <FormMessage />
             </FormItem>
