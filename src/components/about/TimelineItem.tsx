@@ -1,15 +1,27 @@
+
+"use client";
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import type { TimelineEvent } from '@/lib/constants';
 import { CalendarDays } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 interface TimelineItemProps {
   event: TimelineEvent;
   isLast?: boolean;
+  index: number;
 }
 
-export default function TimelineItem({ event, isLast = false }: TimelineItemProps) {
+export default function TimelineItem({ event, isLast = false, index }: TimelineItemProps) {
+  const cardAnimation = {
+    initial: { opacity: 0, x: -50 },
+    whileInView: { opacity: 1, x: 0 },
+    viewport: { once: true, amount: 0.3 },
+    transition: { duration: 0.5, ease: "easeOut", delay: index * 0.15 }
+  };
+
   return (
-    <div className="relative pl-8 sm:pl-10 py-2 group">
+    <motion.div {...cardAnimation} className="relative pl-8 sm:pl-10 py-2 group">
       {/* Circle and Line */}
       <div className="flex flex-col items-center w-8 sm:w-10 absolute left-0 top-0 bottom-0 transform -translate-x-1/2">
         <div className="h-full w-px bg-border group-hover:bg-primary/70 smooth-transition"></div>
@@ -33,6 +45,6 @@ export default function TimelineItem({ event, isLast = false }: TimelineItemProp
           <p className="text-sm sm:text-base text-muted-foreground">{event.description}</p>
         </CardContent>
       </Card>
-    </div>
+    </motion.div>
   );
 }
