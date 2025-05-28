@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,7 +8,7 @@
     --background: 0 0% 96%; /* Misty White #F4F4F4 */
     --foreground: 0 0% 18%; /* Steel Grey #2E2E2E */
 
-    --card: 0 0% 100%; /* White */
+    --card: 0 0% 98%; /* Slightly Off-White for subtle layering */
     --card-foreground: 0 0% 18%; /* Steel Grey #2E2E2E */
 
     --popover: 0 0% 100%; /* White */
@@ -16,11 +17,11 @@
     --primary: 0 0% 18%; /* Steel Grey #2E2E2E */
     --primary-foreground: 0 0% 98%; /* Near White */
 
-    --secondary: 207 79% 46%; /* Machine Blue #1976D2 - Adjusted Lightness */
+    --secondary: 210 69% 49%; /* Machine Blue #1976D2 - Precise HSL */
     --secondary-foreground: 0 0% 98%; /* Near White */
 
-    --muted: 0 0% 90%; /* Muted Gray */
-    --muted-foreground: 0 0% 40%; /* Mid Gray */
+    --muted: 0 0% 85%; /* Muted Gray - Slightly darker for better definition */
+    --muted-foreground: 0 0% 45%; /* Mid Gray - Slightly stronger */
 
     --accent: 30 100% 48%; /* Industrial Orange #F57C00 */
     --accent-foreground: 0 0% 98%; /* Near White */
@@ -28,8 +29,8 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 88%; /* Border Gray */
-    --input: 0 0% 88%; /* Input Gray */
+    --border: 0 0% 80%; /* Border Gray - More visible */
+    --input: 0 0% 80%; /* Input Gray - More visible */
     --ring: 30 100% 48%; /* Industrial Orange for ring */
 
     --radius: 0.5rem;
@@ -60,17 +61,17 @@
     --popover: 0 0% 14%; /* Slightly darker popover #242424 */
     --popover-foreground: 0 0% 96%; /* Misty White #F4F4F4 */
 
-    --primary: 0 0% 96%; /* Misty White #F4F4F4 */
-    --primary-foreground: 0 0% 10%; /* Darker Grey #1A1A1A */
+    --primary: 30 100% 48%; /* Industrial Orange #F57C00 for primary buttons in dark mode */
+    --primary-foreground: 0 0% 98%; /* Near White for text on orange buttons */
 
-    --secondary: 207 79% 46%; /* Machine Blue #1976D2 - Adjusted Lightness */
+    --secondary: 210 69% 49%; /* Machine Blue #1976D2 - Precise HSL */
     --secondary-foreground: 0 0% 98%; /* Near White */
 
     --muted: 0 0% 20%; /* Darker Muted Grey */
-    --muted-foreground: 0 0% 63.9%; /* Lighter Gray */
+    --muted-foreground: 0 0% 70%; /* Lighter Gray for muted text */
 
     --accent: 30 100% 48%; /* Industrial Orange #F57C00 */
-    --accent-foreground: 0 0% 10%; /* Darker Grey #1A1A1A */
+    --accent-foreground: 0 0% 98%; /* Near White for text on orange accent elements */
 
     --destructive: 0 70% 45%; /* Adjusted destructive */
     --destructive-foreground: 0 0% 98%;
