@@ -16,7 +16,7 @@
     --primary: 0 0% 18%; /* Steel Grey #2E2E2E */
     --primary-foreground: 0 0% 98%; /* Near White */
 
-    --secondary: 207 79% 44%; /* Machine Blue #1976D2 */
+    --secondary: 207 79% 46%; /* Machine Blue #1976D2 - Adjusted Lightness */
     --secondary-foreground: 0 0% 98%; /* Near White */
 
     --muted: 0 0% 90%; /* Muted Gray */
@@ -63,7 +63,7 @@
     --primary: 0 0% 96%; /* Misty White #F4F4F4 */
     --primary-foreground: 0 0% 10%; /* Darker Grey #1A1A1A */
 
-    --secondary: 207 79% 44%; /* Machine Blue #1976D2 */
+    --secondary: 207 79% 46%; /* Machine Blue #1976D2 - Adjusted Lightness */
     --secondary-foreground: 0 0% 98%; /* Near White */
 
     --muted: 0 0% 20%; /* Darker Muted Grey */
