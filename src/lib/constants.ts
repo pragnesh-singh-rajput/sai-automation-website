@@ -1,5 +1,5 @@
 import type { LucideIcon } from 'lucide-react';
-import { Home, Package, Settings, Users, Mail, Bot, Wrench, Building2, PanelTopOpen } from 'lucide-react';
+import { Home, Package, Settings, Users, Mail, Bot, Wrench, Building2, PanelTopOpen, PackageCheck, Award, Settings2, Truck, Star, MessageSquare, ThumbsUp } from 'lucide-react';
 
 export type NavItem = {
   label: string;
@@ -15,6 +15,10 @@ export const navItems: NavItem[] = [
   { label: 'Contact', href: '/contact', icon: Mail },
 ];
 
+export type ProductSpecification = { key: string; value: string };
+export type ProductAddon = { id: string; name: string; description: string; };
+export type ProductDatasheet = { name: string; url: string; };
+
 export type Product = {
   id: string;
   name: string;
@@ -23,7 +27,9 @@ export type Product = {
   longDescription: string;
   imageUrl: string;
   price?: string; // Optional
-  specifications?: { key: string; value: string }[];
+  specifications?: ProductSpecification[];
+  addons?: ProductAddon[];
+  datasheets?: ProductDatasheet[];
   aiHint?: string;
 };
 
@@ -43,6 +49,14 @@ export const mockProducts: Product[] = [
       { key: 'Reach', value: '1500 mm' },
       { key: 'Repeatability', value: '±0.02 mm' },
     ],
+    addons: [
+      { id: 'addon-grip-01', name: 'Adaptive Gripper Kit', description: 'Versatile gripper for handling various object shapes and sizes.'},
+      { id: 'addon-vision-01', name: 'Integrated Vision System', description: 'Adds machine vision capabilities for advanced guidance and inspection.'},
+    ],
+    datasheets: [
+      { name: 'X1 Technical Specifications.pdf', url: '#' },
+      { name: 'X1 Maintenance Manual.pdf', url: '#' },
+    ]
   },
   {
     id: 'pmh-ctrl-003',
@@ -59,6 +73,12 @@ export const mockProducts: Product[] = [
       { key: 'Connectivity', value: 'Ethernet, Profibus, Modbus' },
       { key: 'IP Rating', value: 'IP65' },
     ],
+    addons: [
+      { id: 'addon-remote-01', name: 'Remote Access Module', description: 'Enables remote monitoring and control of the panel.'},
+    ],
+    datasheets: [
+      { name: 'C300 User Guide.pdf', url: '#' },
+    ]
   },
   {
     id: 'pmh-sens-005',
@@ -75,6 +95,9 @@ export const mockProducts: Product[] = [
       { key: 'Interface', value: 'GigE Vision' },
       { key: 'Field of View', value: 'Adjustable (30° - 90°)' },
     ],
+    datasheets: [
+      { name: 'HyperVision Datasheet.pdf', url: '#' },
+    ]
   },
    {
     id: 'pmh-act-002',
@@ -91,6 +114,12 @@ export const mockProducts: Product[] = [
       { key: 'Speed', value: 'Up to 100 mm/s' },
       { key: 'Input Voltage', value: '24V DC' },
     ],
+    addons: [
+      { id: 'addon-encoder-01', name: 'High-Resolution Encoder', description: 'Provides enhanced positioning feedback.'},
+    ],
+    datasheets: [
+      { name: 'LA-5000 Product Manual.pdf', url: '#' },
+    ]
   },
 ];
 
@@ -176,4 +205,77 @@ export const officeImages = [
   { src: 'https://placehold.co/600x400.png', alt: 'Advanced Workshop', aiHint: 'industrial workshop' },
   { src: 'https://placehold.co/600x400.png', alt: 'R&D Laboratory', aiHint: 'research lab' },
   { src: 'https://placehold.co/600x400.png', alt: 'Collaborative Meeting Area', aiHint: 'meeting room' },
+];
+
+export type Testimonial = {
+  id: string;
+  quote: string;
+  author: string;
+  company: string;
+  imageUrl?: string;
+  aiHint?: string;
+};
+
+export const testimonials: Testimonial[] = [
+  {
+    id: 'testimonial-1',
+    quote: "Precision Motion Hub transformed our production line. Their robotic solutions increased our efficiency by 40%!",
+    author: 'Jane Doe',
+    company: 'Global Manufacturing Co.',
+    imageUrl: 'https://placehold.co/100x100.png',
+    aiHint: 'business person'
+  },
+  {
+    id: 'testimonial-2',
+    quote: "The custom control panel they built for us was top-notch. Seamless integration and fantastic support.",
+    author: 'John Smith',
+    company: 'Tech Assembly Inc.',
+    imageUrl: 'https://placehold.co/100x100.png',
+    aiHint: 'factory manager'
+  },
+  {
+    id: 'testimonial-3',
+    quote: "Their maintenance team is incredibly responsive. They had our critical machinery back online in record time.",
+    author: 'Alice Brown',
+    company: 'Automated Systems Ltd.',
+    // No image for this one to show variability
+  },
+];
+
+
+// Icons for Home page sections
+export const experienceFeatures = [
+  {
+    icon: PackageCheck,
+    title: 'Components Supplied',
+    description: 'Wide range of high-quality automation parts.',
+  },
+  {
+    icon: Wrench,
+    title: 'Service & Repair',
+    description: 'Expert maintenance and support services.',
+  },
+  {
+    icon: Bot,
+    title: 'Robot Solutions',
+    description: 'Cutting-edge robotic system integration.',
+  },
+];
+
+export const whyChooseUsFeatures = [
+  {
+    icon: Award,
+    title: '15+ Years Experience',
+    description: 'Proven expertise in industrial automation since 2010.',
+  },
+  {
+    icon: Settings2,
+    title: 'End-to-End Solutions',
+    description: 'From design and supply to installation and support.',
+  },
+  {
+    icon: ThumbsUp, // Changed from Truck to be more generic
+    title: 'Reliable Support & Delivery',
+    description: 'Committed to your success with dependable service.',
+  },
 ];

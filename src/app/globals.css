@@ -4,25 +4,25 @@
 
 @layer base {
   :root {
-    --background: 0 0% 96%; /* Light Gray #F4F4F4 */
-    --foreground: 0 0% 18%; /* Deep Slate #2E2E2E */
+    --background: 0 0% 96%; /* Misty White #F4F4F4 */
+    --foreground: 0 0% 18%; /* Steel Grey #2E2E2E */
 
     --card: 0 0% 100%; /* White */
-    --card-foreground: 0 0% 18%; /* Deep Slate #2E2E2E */
+    --card-foreground: 0 0% 18%; /* Steel Grey #2E2E2E */
 
     --popover: 0 0% 100%; /* White */
-    --popover-foreground: 0 0% 18%; /* Deep Slate #2E2E2E */
+    --popover-foreground: 0 0% 18%; /* Steel Grey #2E2E2E */
 
-    --primary: 0 0% 18%; /* Deep Slate #2E2E2E */
+    --primary: 0 0% 18%; /* Steel Grey #2E2E2E */
     --primary-foreground: 0 0% 98%; /* Near White */
 
-    --secondary: 0 0% 93%; /* Lighter Gray */
-    --secondary-foreground: 0 0% 18%; /* Deep Slate #2E2E2E */
+    --secondary: 207 79% 44%; /* Machine Blue #1976D2 */
+    --secondary-foreground: 0 0% 98%; /* Near White */
 
     --muted: 0 0% 90%; /* Muted Gray */
     --muted-foreground: 0 0% 40%; /* Mid Gray */
 
-    --accent: 30 100% 48%; /* Vibrant Orange #F57C00 */
+    --accent: 30 100% 48%; /* Industrial Orange #F57C00 */
     --accent-foreground: 0 0% 98%; /* Near White */
 
     --destructive: 0 84.2% 60.2%;
@@ -30,7 +30,7 @@
 
     --border: 0 0% 88%; /* Border Gray */
     --input: 0 0% 88%; /* Input Gray */
-    --ring: 30 100% 48%; /* Vibrant Orange for ring */
+    --ring: 30 100% 48%; /* Industrial Orange for ring */
 
     --radius: 0.5rem;
 
@@ -51,33 +51,33 @@
   }
 
   .dark {
-    --background: 0 0% 12%; /* Darker Slate #1F1F1F */
-    --foreground: 0 0% 96%; /* Light Gray #F4F4F4 */
+    --background: 0 0% 10%; /* Darker Grey #1A1A1A */
+    --foreground: 0 0% 96%; /* Misty White #F4F4F4 */
 
-    --card: 0 0% 18%; /* Deep Slate #2E2E2E */
-    --card-foreground: 0 0% 96%; /* Light Gray #F4F4F4 */
+    --card: 0 0% 14%; /* Slightly darker card #242424 */
+    --card-foreground: 0 0% 96%; /* Misty White #F4F4F4 */
 
-    --popover: 0 0% 18%; /* Deep Slate #2E2E2E */
-    --popover-foreground: 0 0% 96%; /* Light Gray #F4F4F4 */
+    --popover: 0 0% 14%; /* Slightly darker popover #242424 */
+    --popover-foreground: 0 0% 96%; /* Misty White #F4F4F4 */
 
-    --primary: 0 0% 96%; /* Light Gray #F4F4F4 */
-    --primary-foreground: 0 0% 18%; /* Deep Slate #2E2E2E */
+    --primary: 0 0% 96%; /* Misty White #F4F4F4 */
+    --primary-foreground: 0 0% 10%; /* Darker Grey #1A1A1A */
 
-    --secondary: 0 0% 24%; /* Dark Muted Gray */
-    --secondary-foreground: 0 0% 96%; /* Light Gray #F4F4F4 */
+    --secondary: 207 79% 44%; /* Machine Blue #1976D2 */
+    --secondary-foreground: 0 0% 98%; /* Near White */
 
-    --muted: 0 0% 24%; /* Dark Muted Gray */
+    --muted: 0 0% 20%; /* Darker Muted Grey */
     --muted-foreground: 0 0% 63.9%; /* Lighter Gray */
 
-    --accent: 30 100% 48%; /* Vibrant Orange #F57C00 */
-    --accent-foreground: 0 0% 12%; /* Dark Slate for text on orange */
+    --accent: 30 100% 48%; /* Industrial Orange #F57C00 */
+    --accent-foreground: 0 0% 10%; /* Darker Grey #1A1A1A */
 
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 0 70% 45%; /* Adjusted destructive */
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 24%; /* Dark Border Gray */
-    --input: 0 0% 24%; /* Dark Input Gray */
-    --ring: 30 100% 48%; /* Vibrant Orange for ring */
+    --border: 0 0% 20%; /* Darker Border Grey */
+    --input: 0 0% 20%; /* Darker Input Grey */
+    --ring: 30 100% 48%; /* Industrial Orange for ring */
 
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;

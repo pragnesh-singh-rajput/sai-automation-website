@@ -2,12 +2,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { ArrowRight, Package, Settings, Users } from 'lucide-react';
-import { mockProducts, services as appServices } from '@/lib/constants';
+import { ArrowRight } from 'lucide-react';
+import { mockProducts, experienceFeatures, whyChooseUsFeatures } from '@/lib/constants';
 
 export default function Home() {
   const featuredProducts = mockProducts.slice(0, 3);
-  const highlightedServices = appServices.slice(0, 3);
 
   return (
     <div className="flex flex-col">
@@ -16,7 +15,7 @@ export default function Home() {
         <Image
           src="https://placehold.co/1920x1080.png"
           alt="Industrial Automation Background"
-          data-ai-hint="industrial animation"
+          data-ai-hint="industrial automation"
           fill
           priority
           className="object-cover z-0"
@@ -24,7 +23,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/60 z-10"></div>
         <div className="relative z-20 p-6 container mx-auto">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 font-heading drop-shadow-lg">
-            Precision in Every Motion
+            Powering Precision. Driving Automation.
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto mb-8 text-slate-200 drop-shadow-md">
             Empowering industries with cutting-edge automation, robotics, and control systems for unparalleled efficiency and performance.
@@ -32,12 +31,35 @@ export default function Home() {
           <div className="space-x-4">
             <Button size="lg" asChild className="button-interactive bg-accent hover:bg-accent/90 text-accent-foreground">
               <Link href="/products">
-                Explore Products <ArrowRight className="ml-2 h-5 w-5" />
+                Explore Our Products <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
             <Button variant="outline" size="lg" asChild className="button-interactive border-white text-white hover:bg-white/10">
-              <Link href="/services">Our Services</Link>
+              <Link href="/contact">Get in Touch</Link>
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Experience Section */}
+      <section className="py-16 md:py-24 bg-secondary text-secondary-foreground">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 font-heading">15+ Years of Industrial Excellence</h2>
+          <p className="text-lg text-center max-w-2xl mx-auto mb-12">
+            Since 2010, Precision Motion Hub has been at the forefront of automation technology, delivering innovative solutions and expert services.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            {experienceFeatures.map((feature) => (
+              <Card key={feature.title} className="bg-background/10 backdrop-blur-sm p-6 card-interactive shadow-lg">
+                <div className="flex justify-center mb-4">
+                  <div className="p-4 bg-accent rounded-full">
+                    <feature.icon className="h-10 w-10 text-accent-foreground" />
+                  </div>
+                </div>
+                <h3 className="text-xl font-semibold font-heading mb-2">{feature.title}</h3>
+                <p className="text-sm">{feature.description}</p>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
@@ -88,49 +110,53 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Highlight Section */}
-      <section className="py-16 md:py-24 bg-secondary">
+      {/* Why Choose Us Section */}
+      <section className="py-16 md:py-24 bg-muted/50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 font-heading">Our Core Services</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 font-heading">Why Precision Motion Hub?</h2>
           <p className="text-lg text-muted-foreground text-center max-w-2xl mx-auto mb-12">
-            Providing expert solutions from custom panel building to advanced robotic integrations and ongoing maintenance.
+            We are committed to providing superior automation solutions with a focus on quality, innovation, and customer satisfaction.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {highlightedServices.map((service) => (
-              <Card key={service.id} className="text-center card-interactive p-6 shadow-lg">
-                <div className="flex justify-center mb-4">
-                  <div className="p-4 bg-accent rounded-full">
-                    <service.icon className="h-8 w-8 text-accent-foreground" />
+            {whyChooseUsFeatures.map((feature) => (
+              <Card key={feature.title} className="text-center p-8 card-interactive shadow-lg bg-card">
+                 <div className="flex justify-center mb-6">
+                  <div className="p-4 bg-primary rounded-lg">
+                    <feature.icon className="h-12 w-12 text-primary-foreground" />
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold font-heading mb-2">{service.title}</h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  {service.description.substring(0, 100)}...
-                </p>
-                <Button variant="link" asChild className="text-primary hover:text-accent">
-                  <Link href="/services">
-                    Learn More <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
+                <h3 className="text-2xl font-semibold font-heading mb-3">{feature.title}</h3>
+                <p className="text-muted-foreground">{feature.description}</p>
               </Card>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Call to Action - About Us */}
-      <section className="py-16 md:py-24 bg-background">
-        <div className="container mx-auto px-4 text-center">
-          <Users className="h-16 w-16 text-primary mx-auto mb-6" />
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-heading">Who We Are</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-            Learn more about our company's journey, our dedicated team, and our commitment to innovation and excellence in automation.
-          </p>
-          <Button size="lg" asChild className="button-interactive">
-            <Link href="/about">
-              About Precision Motion Hub <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-          </Button>
+      {/* Call to Action Strip */}
+      <section className="py-16 md:py-24 bg-gray-800 text-white">
+         <div className="relative isolate overflow-hidden">
+          <Image
+            src="https://placehold.co/1920x500.png"
+            alt="Factory floor background"
+            data-ai-hint="factory floor"
+            fill
+            className="object-cover z-0 opacity-30"
+          />
+          <div className="absolute inset-0 bg-primary/70 z-[-1]"></div>
+          <div className="container mx-auto px-4 text-center relative z-10">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 font-heading">
+              Need Industrial Solutions That Last?
+            </h2>
+            <p className="text-lg text-slate-200 max-w-xl mx-auto mb-8">
+              Our team is ready to help you find the perfect automation components and systems for your needs.
+            </p>
+            <Button size="lg" asChild className="button-interactive bg-accent hover:bg-accent/90 text-accent-foreground">
+              <Link href="/contact">
+                Request a Quote <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+          </div>
         </div>
       </section>
     </div>

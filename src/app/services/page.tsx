@@ -1,5 +1,7 @@
 import ServiceSection from '@/components/services/ServiceSection';
+import TestimonialsSection from '@/components/services/TestimonialsSection';
 import { services } from '@/lib/constants';
+import { Separator } from '@/components/ui/separator';
 
 export default function ServicesPage() {
   return (
@@ -16,6 +18,10 @@ export default function ServicesPage() {
           <ServiceSection key={service.id} service={service} reverseLayout={index % 2 !== 0} />
         ))}
       </div>
+
+      <Separator className="my-16 md:my-24" />
+
+      <TestimonialsSection />
     </div>
   );
 }
