@@ -33,7 +33,7 @@ export default function Header() {
               href={item.href}
               className={cn(
                 "text-sm font-medium transition-colors hover:text-primary",
-                pathname === item.href ? "text-primary" : "text-foreground/70"
+                pathname === item.href ? "text-primary font-semibold border-b-2 border-primary pb-0.5" : "text-foreground/70"
               )}
             >
               {item.label}
@@ -58,7 +58,7 @@ export default function Header() {
                 onClick={() => setIsMobileMenuOpen(false)}
                 className={cn(
                   "block rounded-md px-3 py-2 text-base font-medium transition-colors hover:bg-accent hover:text-accent-foreground",
-                  pathname === item.href ? "bg-accent text-accent-foreground" : "text-foreground"
+                  pathname === item.href ? "bg-accent text-accent-foreground font-semibold" : "text-foreground"
                 )}
               >
                 {item.label}

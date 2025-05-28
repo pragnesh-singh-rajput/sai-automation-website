@@ -61,8 +61,8 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
             </p>
           </div>
           
-          <Button size="lg" className="w-full md:w-auto button-interactive">
-            <ShoppingCart className="mr-2 h-5 w-5" /> Add to Quote / Enquire
+          <Button size="lg" className="w-full md:w-auto button-interactive bg-accent hover:bg-accent/90 text-accent-foreground">
+            <ShoppingCart className="mr-2 h-5 w-5" /> Enquire / Add to Quote
           </Button>
         </div>
       </div>

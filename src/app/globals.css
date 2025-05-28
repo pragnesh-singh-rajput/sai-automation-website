@@ -118,6 +118,6 @@
     @apply smooth-transition hover:shadow-xl hover:scale-[1.02];
   }
   .button-interactive {
-    @apply smooth-transition hover:brightness-110 active:scale-95;
+    @apply smooth-transition hover:brightness-110 active:scale-95 hover:-translate-y-0.5;
   }
 }
