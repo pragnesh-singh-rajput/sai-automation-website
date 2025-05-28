@@ -1,9 +1,11 @@
+
 "use client";
 
 import { useFormState, useFormStatus } from "react-dom";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { contactFormSchema, submitContactForm, type ContactFormState } from "@/app/contact/actions";
+import { submitContactForm } from "@/app/contact/actions";
+import { contactFormSchema, type ContactFormState } from "@/app/contact/schemas";
 import type { z } from "zod";
 
 import { Button } from "@/components/ui/button";
