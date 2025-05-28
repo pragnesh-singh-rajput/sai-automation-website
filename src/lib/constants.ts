@@ -1,5 +1,6 @@
+
 import type { LucideIcon } from 'lucide-react';
-import { Home, Package, Settings, Users, Mail, Bot, Wrench, Building2, PanelTopOpen, PackageCheck, Award, Settings2, ThumbsUp, Star, MessageSquare } from 'lucide-react'; // Removed Truck, added ThumbsUp
+import { Home, Package, Settings, Users, Mail, Bot, Wrench, Building2, PanelTopOpen, PackageCheck, Award, Settings2, ThumbsUp, Star, MessageSquare } from 'lucide-react';
 
 export type NavItem = {
   label: string;
@@ -35,131 +36,152 @@ export type Product = {
 
 export const mockProducts: Product[] = [
   {
-    id: 'pmh-rbt-001',
-    name: 'Precision Robotic Arm X1',
-    category: 'Robotics',
-    description: 'High-precision 6-axis robotic arm for complex assembly tasks.',
-    longDescription: 'The Precision Robotic Arm X1 offers unparalleled accuracy and speed for demanding industrial applications. Its robust design and advanced control system ensure reliability and optimal performance in various manufacturing environments. Ideal for pick-and-place, welding, and material handling.',
-    imageUrl: 'https://placehold.co/600x400.png',
-    aiHint: 'robotic arm',
-    price: '$25,000',
-    specifications: [
-      { key: 'Axes', value: '6' },
-      { key: 'Payload', value: '10 kg' },
-      { key: 'Reach', value: '1500 mm' },
-      { key: 'Repeatability', value: '±0.02 mm' },
-    ],
-    addons: [
-      { id: 'addon-grip-01', name: 'Adaptive Gripper Kit', description: 'Versatile gripper for handling various object shapes and sizes.'},
-      { id: 'addon-vision-01', name: 'Integrated Vision System', description: 'Adds machine vision capabilities for advanced guidance and inspection.'},
-    ],
-    datasheets: [
-      { name: 'X1 Technical Specifications.pdf', url: '#' },
-      { name: 'X1 Maintenance Manual.pdf', url: '#' },
-    ]
-  },
-  {
-    id: 'pmh-ctrl-003',
-    name: 'Advanced Control Panel C300',
-    category: 'Control Systems',
-    description: 'Modular control panel for automated machinery and production lines.',
-    longDescription: 'The Advanced Control Panel C300 provides a flexible and powerful solution for managing complex automation systems. Featuring a user-friendly HMI and seamless integration capabilities, it streamlines operations and enhances productivity. Customizable to fit specific industry needs.',
-    imageUrl: 'https://placehold.co/600x400.png',
-    aiHint: 'control panel',
-    price: '$8,500',
-    specifications: [
-      { key: 'Processor', value: 'Quad-Core Industrial CPU' },
-      { key: 'Display', value: '15" Touchscreen HMI' },
-      { key: 'Connectivity', value: 'Ethernet, Profibus, Modbus' },
-      { key: 'IP Rating', value: 'IP65' },
-    ],
-    addons: [
-      { id: 'addon-remote-01', name: 'Remote Access Module', description: 'Enables remote monitoring and control of the panel.'},
-    ],
-    datasheets: [
-      { name: 'C300 User Guide.pdf', url: '#' },
-    ]
-  },
-  {
-    id: 'pmh-sens-005',
-    name: 'HyperVision Sensor Array',
-    category: 'Sensors',
-    description: 'State-of-the-art sensor array for quality control and object detection.',
-    longDescription: 'The HyperVision Sensor Array utilizes advanced imaging and processing technology to deliver precise and reliable data for quality assurance and automation tasks. Its compact design and robust construction make it suitable for harsh industrial environments. Enhances defect detection and process monitoring.',
-    imageUrl: 'https://placehold.co/600x400.png',
-    aiHint: 'industrial sensor',
-    price: '$3,200',
-    specifications: [
-      { key: 'Resolution', value: '5 MP' },
-      { key: 'Frame Rate', value: '60 FPS' },
-      { key: 'Interface', value: 'GigE Vision' },
-      { key: 'Field of View', value: 'Adjustable (30° - 90°)' },
-    ],
-    datasheets: [
-      { name: 'HyperVision Datasheet.pdf', url: '#' },
-    ]
-  },
-   {
-    id: 'pmh-act-002',
-    name: 'Linear Actuator LA-5000',
-    category: 'Actuators',
-    description: 'High-performance linear actuator for precise positioning.',
-    longDescription: 'The LA-5000 Linear Actuator delivers exceptional force and precision for a wide range of motion control applications. Its durable construction and efficient motor ensure long-lasting performance in demanding industrial settings. Ideal for automation, robotics, and material handling systems.',
-    imageUrl: 'https://placehold.co/600x400.png',
-    aiHint: 'linear actuator',
-    price: '$1,800',
-    specifications: [
-      { key: 'Max Stroke', value: '500 mm' },
-      { key: 'Max Force', value: '5000 N' },
-      { key: 'Speed', value: 'Up to 100 mm/s' },
-      { key: 'Input Voltage', value: '24V DC' },
-    ],
-    addons: [
-      { id: 'addon-encoder-01', name: 'High-Resolution Encoder', description: 'Provides enhanced positioning feedback.'},
-    ],
-    datasheets: [
-      { name: 'LA-5000 Product Manual.pdf', url: '#' },
-    ]
-  },
-  {
-    id: 'pmh-lmr-001',
-    name: 'LM Rail Series HRW',
+    id: 'sai-lmr-001',
+    name: 'LM Rail With Block',
     category: 'LM Rails',
-    description: 'High-rigidity LM rails for precision linear motion.',
-    longDescription: 'The HRW series LM Rails offer superior rigidity and accuracy for demanding linear motion applications. Designed for heavy loads and high-speed operations, these rails ensure smooth and reliable performance. Available in various lengths and configurations.',
+    description: 'Precision LM rails with matching blocks for smooth linear motion.',
+    longDescription: 'Our LM Rails with Blocks provide high rigidity and accuracy for various industrial applications. Engineered for durability and smooth operation, they are essential components for precision machinery, automation systems, and robotics. Available in multiple sizes and configurations to meet your specific requirements.',
     imageUrl: 'https://placehold.co/600x400.png',
-    aiHint: 'lm rail',
-    price: '$150/meter',
-    specifications: [
-        { key: 'Material', value: 'Hardened Steel Alloy' },
-        { key: 'Max Load', value: 'Dynamic: 50 kN, Static: 80 kN' },
-        { key: 'Accuracy Grade', value: 'P5, P4, P3' },
-    ],
-    datasheets: [
-        { name: 'HRW Series Datasheet.pdf', url: '#' },
-    ]
+    aiHint: 'lm rail block',
+    specifications: [],
+    addons: [],
+    datasheets: []
   },
   {
-    id: 'pmh-crb-001',
-    name: 'Cross Roller Bearing CRB-X',
-    category: 'Cross Rollers',
-    description: 'Compact cross roller bearings for precise rotational movement.',
-    longDescription: 'The CRB-X Cross Roller Bearings provide high rotational accuracy and load-bearing capacity in a compact design. Ideal for applications requiring smooth, precise rotation with minimal friction and high rigidity, such as robotic joints and indexing tables.',
+    id: 'sai-bls-001',
+    name: 'Ball Screw With Nut',
+    category: 'Ball Screws',
+    description: 'High-efficiency ball screws with precision nuts for linear actuation.',
+    longDescription: 'These Ball Screws with Nuts offer excellent transmission efficiency and precise positioning. Ideal for applications requiring high-speed movement and accuracy, such as CNC machines, 3D printers, and automated assembly lines. Robust construction ensures long service life.',
     imageUrl: 'https://placehold.co/600x400.png',
-    aiHint: 'cross roller',
-    price: '$80',
-    specifications: [
-        { key: 'Inner Diameter', value: '20mm - 200mm options' },
-        { key: 'Outer Diameter', value: '40mm - 300mm options' },
-        { key: 'Static Load Rating', value: 'Up to 150 kN' },
-    ],
-    datasheets: [
-        { name: 'CRB-X Series Specs.pdf', url: '#' },
-    ]
+    aiHint: 'ball screw nut',
+    specifications: [],
+    addons: [],
+    datasheets: []
   },
+  {
+    id: 'sai-bls-002',
+    name: 'Ball Screw End Support',
+    category: 'Ball Screw Supports',
+    description: 'Reliable end supports for ball screw assemblies.',
+    longDescription: 'Our Ball Screw End Supports provide stable and accurate mounting for ball screw shafts. These units are crucial for maintaining alignment and preventing deflection, ensuring optimal performance and longevity of your linear motion system. Available in fixed and supported side configurations.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    aiHint: 'end support',
+    specifications: [],
+    addons: [],
+    datasheets: []
+  },
+  {
+    id: 'sai-cpl-001',
+    name: 'Coupling for Servo Motor',
+    category: 'Couplings',
+    description: 'High-performance couplings designed for servo motor applications.',
+    longDescription: 'These couplings provide reliable torque transmission and misalignment compensation for servo motor systems. Designed for high torsional stiffness and low inertia, they ensure precise motion control and reduce vibration. Various types available to suit different servo motor requirements.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    aiHint: 'servo coupling',
+    specifications: [],
+    addons: [],
+    datasheets: []
+  },
+  {
+    id: 'sai-bsh-001',
+    name: 'Taper Lock Bush',
+    category: 'Bushings',
+    description: 'Versatile taper lock bushes for secure shaft mounting.',
+    longDescription: 'Taper Lock Bushes offer a convenient and secure method for mounting pulleys, sprockets, and other components to shafts. They provide a strong, backlash-free connection and are easy to install and remove. Available in a wide range of bore sizes.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    aiHint: 'taper lock',
+    specifications: [],
+    addons: [],
+    datasheets: []
+  },
+  {
+    id: 'sai-gbx-001',
+    name: 'Planetary Gearbox',
+    category: 'Gearboxes',
+    description: 'Precision planetary gearboxes for high torque and compact applications.',
+    longDescription: 'Our Planetary Gearboxes deliver high torque density, excellent efficiency, and low backlash. They are ideal for applications requiring precise speed reduction and torque amplification in a compact footprint, such as robotics, automation, and servo systems.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    aiHint: 'planetary gearbox',
+    specifications: [],
+    addons: [],
+    datasheets: []
+  },
+  {
+    id: 'sai-shb-001',
+    name: 'Hard Chrome Shaft with Bearings',
+    category: 'Shafts & Bearings',
+    description: 'Durable hard chrome shafts supplied with various types of bearings.',
+    longDescription: 'These Hard Chrome Shafts offer excellent wear resistance and a smooth surface finish, ideal for linear motion systems. Paired with a comprehensive range of compatible bearings, they provide a complete solution for guiding and supporting loads with precision and reliability.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    aiHint: 'chrome shaft bearing',
+    specifications: [],
+    addons: [],
+    datasheets: []
+  },
+  {
+    id: 'sai-drv-001',
+    name: 'Rack & Pinion Drive',
+    category: 'Drives',
+    description: 'Robust rack and pinion drives for linear motion systems.',
+    longDescription: 'Our Rack and Pinion Drives convert rotary motion into linear motion with high accuracy and force. Suitable for long travel distances and heavy loads, these drives are commonly used in CNC machinery, material handling systems, and automation equipment. Various pitches and materials available.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    aiHint: 'rack pinion',
+    specifications: [],
+    addons: [],
+    datasheets: []
+  },
+  {
+    id: 'sai-mtr-001',
+    name: 'Stepper Motor',
+    category: 'Motors',
+    description: 'Reliable stepper motors for precise positioning control.',
+    longDescription: 'Stepper Motors provide accurate and repeatable positioning without the need for feedback sensors in many applications. They are ideal for tasks requiring precise angular movement, such as in 3D printers, CNC machines, and automated instrumentation. Various sizes and torque ratings available.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    aiHint: 'stepper motor',
+    specifications: [],
+    addons: [],
+    datasheets: []
+  },
+  {
+    id: 'sai-rbt-001',
+    name: 'MIG Welding Robots & Cobots',
+    category: 'Robotics',
+    description: 'Advanced robots and cobots optimized for MIG welding applications.',
+    longDescription: 'Enhance your welding operations with our range of MIG Welding Robots and Collaborative Robots (Cobots). These systems offer high precision, speed, and consistency, improving weld quality and productivity. Cobots provide a flexible solution for working alongside human operators.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    aiHint: 'mig welding robot',
+    specifications: [],
+    addons: [],
+    datasheets: []
+  },
+  {
+    id: 'sai-alp-001',
+    name: 'Aluminium Profile & Accessories',
+    category: 'Aluminium Profiles',
+    description: 'Versatile aluminium profiles and a wide range of accessories for custom structures.',
+    longDescription: 'Our Aluminium Profiles and Accessories provide a flexible and modular system for building custom frames, machine guards, workstations, and more. The T-slot design allows for easy assembly and modification. A comprehensive range of connectors, fasteners, and other accessories are available.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    aiHint: 'aluminium profile',
+    specifications: [],
+    addons: [],
+    datasheets: []
+  },
+  {
+    id: 'sai-rbt-002',
+    name: 'Single Axis Robot',
+    category: 'Robotics',
+    description: 'Compact and efficient single-axis robots for linear automation tasks.',
+    longDescription: 'Single Axis Robots, also known as linear actuators or linear stages, provide precise and repeatable linear motion. They are ideal for applications such as pick-and-place, dispensing, positioning, and inspection. Available in various stroke lengths, speeds, and load capacities.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    aiHint: 'single axis robot',
+    specifications: [],
+    addons: [],
+    datasheets: []
+  }
 ];
 
-export const productCategories = ['All', ...new Set(mockProducts.map(p => p.category))];
+export const productCategories = ['All', ...new Set(mockProducts.map(p => p.category).sort())];
 
 
 export type Service = {
@@ -284,17 +306,17 @@ export const experienceFeatures = [
   {
     icon: PackageCheck,
     title: 'Components Supplied',
-    description: 'Wide range of high-quality automation parts including LM Rails, Cross Rollers, Couplings, Racks & Pinions.',
+    description: 'Durable solutions for LM Rails, Cross Rollers, Couplings, Racks, Pinions, and more.',
   },
   {
     icon: Wrench,
     title: 'Service & Repair',
-    description: 'Expert maintenance and support services for the entire lifecycle of your automation systems.',
+    description: 'Expert maintenance and support for the entire lifecycle of your automation systems.',
   },
   {
     icon: Bot,
     title: 'Robot Solutions',
-    description: 'Cutting-edge robotic system integration, from new installations to upgrades.',
+    description: 'Cutting-edge robotic system integration, from new installations to upgrades and new panels.',
   },
 ];
 
@@ -307,11 +329,11 @@ export const whyChooseUsFeatures = [
   {
     icon: Settings2,
     title: 'End-to-End Solutions',
-    description: 'From design and supply to installation and support, covering all your lifecycle needs.',
+    description: 'Meeting total lifecycle needs to help customers realize the most value from their investment.',
   },
   {
-    icon: ThumbsUp,
+    icon: ThumbsUp, // Changed from Truck
     title: 'Reliable Solutions & Support',
-    description: 'Committed to your success with dependable products, services, and support for growing companies.',
+    description: 'Committed to your success with dependable products and services for growing companies.',
   },
 ];
