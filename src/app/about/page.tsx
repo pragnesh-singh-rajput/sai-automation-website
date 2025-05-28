@@ -8,9 +8,9 @@ export default function AboutPage() {
   return (
     <div className="container mx-auto px-4 py-12 md:py-16">
       <header className="text-center mb-12 md:mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold font-heading mb-4">About Precision Motion Hub</h1>
+        <h1 className="text-4xl md:text-5xl font-bold font-heading mb-4">About SAI AUTOMATION</h1>
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-          Driven by innovation and a commitment to excellence, we are your trusted partner in advanced industrial automation and robotics.
+          SAI AUTOMATION is a leading supplier of industrial components, offering durable solutions for LM Rails, Cross Rollers, Couplings, Racks, Pinions, and more. With 15 years of experience in linear motion and automation, we meet the total lifecycle needs of our customers, from new panels and robots to comprehensive service and repair. We are dedicated to providing reliable solutions that support growing companies and help them realize the most value from their investments.
         </p>
       </header>
 

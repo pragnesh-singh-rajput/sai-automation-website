@@ -12,10 +12,10 @@ export default function Footer() {
           <div>
             <Link href="/" className="flex items-center gap-2 mb-4 transition-opacity hover:opacity-80">
               <Settings2 className="h-7 w-7 text-primary" />
-              <span className="font-heading text-xl font-bold text-primary">Precision Motion Hub</span>
+              <span className="font-heading text-xl font-bold text-primary">SAI AUTOMATION</span>
             </Link>
             <p className="text-sm text-muted-foreground">
-              Leading the way in industrial automation and robotic solutions.
+              Your trusted supplier for industrial components and automation solutions. 15 years of experience in linear motion, panels, robots, service & repair.
             </p>
           </div>
           
@@ -45,7 +45,7 @@ export default function Footer() {
         
         <div className="mt-8 border-t border-border/40 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            &copy; {currentYear} Precision Motion Hub. All rights reserved.
+            &copy; {currentYear} SAI AUTOMATION. All rights reserved.
           </p>
         </div>
       </div>

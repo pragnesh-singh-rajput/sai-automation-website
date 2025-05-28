@@ -1,5 +1,5 @@
 import type { LucideIcon } from 'lucide-react';
-import { Home, Package, Settings, Users, Mail, Bot, Wrench, Building2, PanelTopOpen, PackageCheck, Award, Settings2, Truck, Star, MessageSquare, ThumbsUp } from 'lucide-react';
+import { Home, Package, Settings, Users, Mail, Bot, Wrench, Building2, PanelTopOpen, PackageCheck, Award, Settings2, ThumbsUp, Star, MessageSquare } from 'lucide-react'; // Removed Truck, added ThumbsUp
 
 export type NavItem = {
   label: string;
@@ -121,6 +121,42 @@ export const mockProducts: Product[] = [
       { name: 'LA-5000 Product Manual.pdf', url: '#' },
     ]
   },
+  {
+    id: 'pmh-lmr-001',
+    name: 'LM Rail Series HRW',
+    category: 'LM Rails',
+    description: 'High-rigidity LM rails for precision linear motion.',
+    longDescription: 'The HRW series LM Rails offer superior rigidity and accuracy for demanding linear motion applications. Designed for heavy loads and high-speed operations, these rails ensure smooth and reliable performance. Available in various lengths and configurations.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    aiHint: 'lm rail',
+    price: '$150/meter',
+    specifications: [
+        { key: 'Material', value: 'Hardened Steel Alloy' },
+        { key: 'Max Load', value: 'Dynamic: 50 kN, Static: 80 kN' },
+        { key: 'Accuracy Grade', value: 'P5, P4, P3' },
+    ],
+    datasheets: [
+        { name: 'HRW Series Datasheet.pdf', url: '#' },
+    ]
+  },
+  {
+    id: 'pmh-crb-001',
+    name: 'Cross Roller Bearing CRB-X',
+    category: 'Cross Rollers',
+    description: 'Compact cross roller bearings for precise rotational movement.',
+    longDescription: 'The CRB-X Cross Roller Bearings provide high rotational accuracy and load-bearing capacity in a compact design. Ideal for applications requiring smooth, precise rotation with minimal friction and high rigidity, such as robotic joints and indexing tables.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    aiHint: 'cross roller',
+    price: '$80',
+    specifications: [
+        { key: 'Inner Diameter', value: '20mm - 200mm options' },
+        { key: 'Outer Diameter', value: '40mm - 300mm options' },
+        { key: 'Static Load Rating', value: 'Up to 150 kN' },
+    ],
+    datasheets: [
+        { name: 'CRB-X Series Specs.pdf', url: '#' },
+    ]
+  },
 ];
 
 export const productCategories = ['All', ...new Set(mockProducts.map(p => p.category))];
@@ -177,7 +213,7 @@ export type TimelineEvent = {
 };
 
 export const companyTimeline: TimelineEvent[] = [
-  { year: '2010', title: 'Company Founded', description: 'Precision Motion Hub was established with a vision to revolutionize industrial automation.' },
+  { year: '2010', title: 'Company Founded', description: 'SAI AUTOMATION was established with a vision to revolutionize industrial automation.' },
   { year: '2012', title: 'First Major Project', description: 'Successfully delivered a large-scale automation solution for a key manufacturing client.' },
   { year: '2015', title: 'Expansion of Services', description: 'Introduced robotic welding and advanced control system integration services.' },
   { year: '2018', title: 'New Headquarters', description: 'Moved into a new, state-of-the-art facility to accommodate growth and enhance R&D capabilities.' },
@@ -219,7 +255,7 @@ export type Testimonial = {
 export const testimonials: Testimonial[] = [
   {
     id: 'testimonial-1',
-    quote: "Precision Motion Hub transformed our production line. Their robotic solutions increased our efficiency by 40%!",
+    quote: "SAI AUTOMATION transformed our production line. Their robotic solutions increased our efficiency by 40%!",
     author: 'Jane Doe',
     company: 'Global Manufacturing Co.',
     imageUrl: 'https://placehold.co/100x100.png',
@@ -248,17 +284,17 @@ export const experienceFeatures = [
   {
     icon: PackageCheck,
     title: 'Components Supplied',
-    description: 'Wide range of high-quality automation parts.',
+    description: 'Wide range of high-quality automation parts including LM Rails, Cross Rollers, Couplings, Racks & Pinions.',
   },
   {
     icon: Wrench,
     title: 'Service & Repair',
-    description: 'Expert maintenance and support services.',
+    description: 'Expert maintenance and support services for the entire lifecycle of your automation systems.',
   },
   {
     icon: Bot,
     title: 'Robot Solutions',
-    description: 'Cutting-edge robotic system integration.',
+    description: 'Cutting-edge robotic system integration, from new installations to upgrades.',
   },
 ];
 
@@ -266,16 +302,16 @@ export const whyChooseUsFeatures = [
   {
     icon: Award,
     title: '15+ Years Experience',
-    description: 'Proven expertise in industrial automation since 2010.',
+    description: 'Proven expertise in industrial automation and linear motion products since 2010.',
   },
   {
     icon: Settings2,
     title: 'End-to-End Solutions',
-    description: 'From design and supply to installation and support.',
+    description: 'From design and supply to installation and support, covering all your lifecycle needs.',
   },
   {
-    icon: ThumbsUp, // Changed from Truck to be more generic
-    title: 'Reliable Support & Delivery',
-    description: 'Committed to your success with dependable service.',
+    icon: ThumbsUp,
+    title: 'Reliable Solutions & Support',
+    description: 'Committed to your success with dependable products, services, and support for growing companies.',
   },
 ];

@@ -26,7 +26,7 @@ export default function Home() {
             Powering Precision. Driving Automation.
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto mb-8 text-slate-200 drop-shadow-md">
-            Empowering industries with cutting-edge automation, robotics, and control systems for unparalleled efficiency and performance.
+            Supplier of industrial components like LM Rails, Cross Rollers, Couplings, and more. We provide durable solutions and meet total lifecycle needs from new panels to robots, service, and repair.
           </p>
           <div className="space-x-4">
             <Button size="lg" asChild className="button-interactive bg-accent hover:bg-accent/90 text-accent-foreground">
@@ -45,8 +45,8 @@ export default function Home() {
       <section className="py-16 md:py-24 bg-secondary text-secondary-foreground">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 font-heading">15+ Years of Industrial Excellence</h2>
-          <p className="text-lg text-center max-w-2xl mx-auto mb-12">
-            Since 2010, Precision Motion Hub has been at the forefront of automation technology, delivering innovative solutions and expert services.
+          <p className="text-lg text-center max-w-3xl mx-auto mb-12">
+            With 15 years of experience in linear motion and automation products, SAI AUTOMATION meets the total lifecycle needs of your company. From New Panels to Robots, Service, and Repair, we add value at every touchpoint, helping you realize the most from your investment.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             {experienceFeatures.map((feature) => (
@@ -69,7 +69,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 font-heading">Featured Products</h2>
           <p className="text-lg text-muted-foreground text-center max-w-2xl mx-auto mb-12">
-            Discover our range of high-quality components and systems designed for reliability and peak performance.
+            Discover our range of high-quality components and systems designed for reliability and peak performance, including LM Rails, Cross Rollers, Couplings, Racks, and Pinions.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredProducts.map((product) => (
@@ -113,9 +113,9 @@ export default function Home() {
       {/* Why Choose Us Section */}
       <section className="py-16 md:py-24 bg-muted/50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 font-heading">Why Precision Motion Hub?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 font-heading">Why SAI AUTOMATION?</h2>
           <p className="text-lg text-muted-foreground text-center max-w-2xl mx-auto mb-12">
-            We are committed to providing superior automation solutions with a focus on quality, innovation, and customer satisfaction.
+            We are committed to providing superior automation solutions with a focus on quality, innovation, and customer satisfaction. We offer reliable solutions that support growing companies.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {whyChooseUsFeatures.map((feature) => (

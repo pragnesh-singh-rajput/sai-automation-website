@@ -24,8 +24,8 @@ const orbitron = Orbitron({
 });
 
 export const metadata: Metadata = {
-  title: 'Precision Motion Hub',
-  description: 'Advanced solutions in industrial automation and robotics.',
+  title: 'SAI AUTOMATION - Industrial Components & Automation Solutions',
+  description: 'Supplier of industrial components like LM Rails, Cross Rollers, Couplings, Racks, Pinions. Offering durable automation solutions, new panels, robots, service & repair with 15 years of experience.',
 };
 
 export default function RootLayout({

@@ -9,7 +9,7 @@ export default function ServicesPage() {
       <header className="text-center mb-12 md:mb-16">
         <h1 className="text-4xl md:text-5xl font-bold font-heading mb-4">Our Expert Services</h1>
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-          We offer a comprehensive suite of industrial automation services, from custom design and integration to ongoing support and maintenance, ensuring your operations run at peak efficiency.
+          At SAI AUTOMATION, we address the diverse business needs of our industrial customers by offering a variety of products and services. We cover the total lifecycle from new panels and robotic systems to ongoing service and repair, ensuring you get the most value from your automation investments.
         </p>
       </header>
 

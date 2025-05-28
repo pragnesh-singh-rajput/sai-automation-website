@@ -23,7 +23,7 @@ export default function Header() {
       <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
         <Link href="/" className="flex items-center gap-2 transition-opacity hover:opacity-80">
           <Settings2 className="h-7 w-7 text-primary" />
-          <span className="font-heading text-xl font-bold text-primary">Precision Motion Hub</span>
+          <span className="font-heading text-xl font-bold text-primary">SAI AUTOMATION</span>
         </Link>
         
         <nav className="hidden md:flex items-center space-x-6">
