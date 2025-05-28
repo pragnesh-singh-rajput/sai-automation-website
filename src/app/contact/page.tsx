@@ -8,7 +8,13 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { motion } from 'framer-motion';
 
 export default function ContactPage() {
-  const cardAnimation = {
+  const formContainerAnimation = {
+    initial: { opacity: 0, y: 20, scale: 0.98 },
+    animate: { opacity: 1, y: 0, scale: 1 }, // Changed from whileInView
+    transition: { duration: 0.5, ease: "easeOut" }
+  };
+
+  const cardAnimation = { // For other cards that can animate on scroll
     initial: { opacity: 0, y: 20, scale: 0.98 },
     whileInView: { opacity: 1, y: 0, scale: 1 },
     viewport: { once: true, amount: 0.15 },
@@ -38,7 +44,7 @@ export default function ContactPage() {
 
       <div className="grid lg:grid-cols-3 gap-8 md:gap-12">
         {/* Contact Form Section */}
-        <motion.div {...cardAnimation} className="lg:col-span-2">
+        <motion.div {...formContainerAnimation} className="lg:col-span-2">
           <Card className="shadow-xl card-interactive">
             <CardHeader>
               <CardTitle className="text-2xl font-heading">Send Us a Message</CardTitle>
