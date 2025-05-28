@@ -35,10 +35,10 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold font-heading mb-3">Contact Us</h3>
             <address className="not-italic text-sm text-muted-foreground space-y-1">
-              <p>123 Automation Drive</p>
-              <p>Tech Park, Innovation City, 45678</p>
-              <p>Email: <a href="mailto:info@precisionmotionhub.com" className="hover:text-primary transition-colors">info@precisionmotionhub.com</a></p>
-              <p>Phone: <a href="tel:+1234567890" className="hover:text-primary transition-colors">(123) 456-7890</a></p>
+              <p>08-Gandhi Oil Mill Compound</p>
+              <p>Gorwa BIDC, Vadodara - 390016</p>
+              <p>Email: <a href="mailto:saiautomation2414@gmail.com" className="hover:text-primary transition-colors">saiautomation2414@gmail.com</a></p>
+              <p>Phone: <a href="tel:+919998149320" className="hover:text-primary transition-colors">+91 99981 49320</a></p>
             </address>
           </div>
         </div>

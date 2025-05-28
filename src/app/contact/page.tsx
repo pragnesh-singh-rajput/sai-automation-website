@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Mail, MapPin, Phone, Building } from 'lucide-react';
+import { Mail, MapPin, Phone, Building, Briefcase } from 'lucide-react';
 import ContactForm from '@/components/contact/ContactForm';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
@@ -34,12 +34,23 @@ export default function ContactPage() {
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-start">
+                <Briefcase className="h-6 w-6 text-primary mr-3 mt-1 shrink-0" />
+                <div>
+                  <h3 className="font-semibold">Work & Delivery Address</h3>
+                  <address className="not-italic text-muted-foreground text-sm">
+                    08-Gandhi Oil Mill Compound<br />
+                    Gorwa BIDC, Vadodara - 390016
+                  </address>
+                </div>
+              </div>
+              <div className="flex items-start">
                 <MapPin className="h-6 w-6 text-primary mr-3 mt-1 shrink-0" />
                 <div>
-                  <h3 className="font-semibold">Our Address</h3>
+                  <h3 className="font-semibold">Billing Address</h3>
                   <address className="not-italic text-muted-foreground text-sm">
-                    123 Automation Drive<br />
-                    Tech Park, Innovation City, 45678
+                    J-302, Siddharth Elegance<br />
+                    Near Roses Nursery, Old Chhani Road<br/>
+                    Vadodara - 390002
                   </address>
                 </div>
               </div>
@@ -47,8 +58,8 @@ export default function ContactPage() {
                 <Mail className="h-6 w-6 text-primary mr-3 mt-1 shrink-0" />
                 <div>
                   <h3 className="font-semibold">Email Us</h3>
-                  <a href="mailto:info@precisionmotionhub.com" className="text-primary hover:underline text-sm">
-                    info@precisionmotionhub.com
+                  <a href="mailto:saiautomation2414@gmail.com" className="text-primary hover:underline text-sm">
+                    saiautomation2414@gmail.com
                   </a>
                 </div>
               </div>
@@ -56,8 +67,8 @@ export default function ContactPage() {
                 <Phone className="h-6 w-6 text-primary mr-3 mt-1 shrink-0" />
                 <div>
                   <h3 className="font-semibold">Call Us</h3>
-                  <a href="tel:+1234567890" className="text-primary hover:underline text-sm">
-                    (123) 456-7890
+                  <a href="tel:+919998149320" className="text-primary hover:underline text-sm">
+                    +91 99981 49320
                   </a>
                 </div>
               </div>
