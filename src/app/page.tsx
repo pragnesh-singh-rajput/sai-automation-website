@@ -1,9 +1,11 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight } from 'lucide-react';
 import { mockProducts, experienceFeatures, whyChooseUsFeatures } from '@/lib/constants';
+import FeaturedProductList from '@/components/home/FeaturedProductList';
 
 export default function Home() {
   const featuredProducts = mockProducts.slice(0, 3);
@@ -26,7 +28,7 @@ export default function Home() {
             Powering Precision. Driving Automation.
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto mb-8 text-slate-200 drop-shadow-md">
-            Supplier of industrial components like LM Rails, Cross Rollers, Couplings, and more. We provide durable solutions and meet total lifecycle needs from new panels to robots, service, and repair.
+            SAI AUTOMATION is a supplier of industrial components like LM Rails, Cross Rollers, Couplings, and more. We provide durable solutions and meet total lifecycle needs from new panels to robots, service, and repair.
           </p>
           <div className="space-x-4">
             <Button size="lg" asChild className="button-interactive bg-accent hover:bg-accent/90 text-accent-foreground">
@@ -71,35 +73,7 @@ export default function Home() {
           <p className="text-lg text-muted-foreground text-center max-w-2xl mx-auto mb-12">
             Discover our range of high-quality components and systems designed for reliability and peak performance, including LM Rails, Cross Rollers, Couplings, Racks, and Pinions.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredProducts.map((product) => (
-              <Card key={product.id} className="flex flex-col card-interactive overflow-hidden shadow-lg">
-                <div className="relative h-60 w-full">
-                  <Image
-                    src={product.imageUrl}
-                    alt={product.name}
-                    data-ai-hint={product.aiHint || "industrial product"}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <CardHeader>
-                  <CardTitle className="font-heading text-xl">{product.name}</CardTitle>
-                  <CardDescription>{product.category}</CardDescription>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <p className="text-sm text-muted-foreground mb-4">{product.description}</p>
-                </CardContent>
-                <div className="p-6 pt-0">
-                  <Button asChild className="w-full button-interactive">
-                    <Link href={`/products/${product.id}`}>
-                      View Details <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </div>
-              </Card>
-            ))}
-          </div>
+          <FeaturedProductList products={featuredProducts} />
           <div className="text-center mt-12">
             <Button variant="outline" asChild className="button-interactive">
               <Link href="/products">
