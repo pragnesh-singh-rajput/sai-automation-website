@@ -66,7 +66,7 @@ export default function Home() {
                 Explore Our Products <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            <Button variant="outline" size="lg" asChild className="button-interactive border-white text-white hover:bg-white/10">
+            <Button variant="outline" size="lg" asChild className="button-interactive border-accent text-accent hover:bg-accent hover:text-accent-foreground">
               <Link href="/contact">Get in Touch</Link>
             </Button>
           </div>
@@ -74,9 +74,12 @@ export default function Home() {
       </section>
 
       {/* Our Experience Section */}
-      <section className="py-16 md:py-24 bg-secondary text-secondary-foreground">
+      <motion.section 
+        {...sectionAnimation}
+        className="py-16 md:py-24 bg-secondary text-secondary-foreground"
+      >
         <div className="container mx-auto px-4">
-          <motion.h2 {...sectionAnimation} className="text-3xl md:text-4xl font-bold text-center mb-4 font-heading">15+ Years of Industrial Excellence</motion.h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 font-heading">15+ Years of Industrial Excellence</h2>
           <motion.p {...textAnimation} className="text-lg text-center max-w-3xl mx-auto mb-12">
             With 15 years of experience in linear motion and automation products, SAI AUTOMATION meets the total lifecycle needs of your company. From New Panels to Robots, Service, and Repair, we add value at every touchpoint, helping you realize the most from your investment.
           </motion.p>
@@ -102,12 +105,15 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Featured Products Section */}
-      <section className="py-16 md:py-24 bg-background">
+      <motion.section 
+        {...sectionAnimation}
+        className="py-16 md:py-24 bg-background"
+      >
         <div className="container mx-auto px-4">
-          <motion.h2 {...sectionAnimation} className="text-3xl md:text-4xl font-bold text-center mb-4 font-heading">Featured Products</motion.h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 font-heading">Featured Products</h2>
           <motion.p {...textAnimation} className="text-lg text-muted-foreground text-center max-w-2xl mx-auto mb-12">
             Discover our range of high-quality components and systems designed for reliability and peak performance, including LM Rails, Cross Rollers, Couplings, Racks, and Pinions.
           </motion.p>
@@ -120,12 +126,15 @@ export default function Home() {
             </Button>
           </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Why Choose Us Section */}
-      <section className="py-16 md:py-24 bg-muted/50">
+      <motion.section 
+        {...sectionAnimation}
+        className="py-16 md:py-24 bg-muted/50"
+      >
         <div className="container mx-auto px-4">
-          <motion.h2 {...sectionAnimation} className="text-3xl md:text-4xl font-bold text-center mb-4 font-heading">Why SAI AUTOMATION?</motion.h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 font-heading">Why SAI AUTOMATION?</h2>
           <motion.p {...textAnimation} className="text-lg text-muted-foreground text-center max-w-2xl mx-auto mb-12">
             We are committed to providing superior automation solutions with a focus on quality, innovation, and customer satisfaction. We offer reliable solutions that support growing companies.
           </motion.p>
@@ -151,7 +160,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Call to Action Strip */}
       <section className="py-16 md:py-24 bg-gray-800 text-white">
